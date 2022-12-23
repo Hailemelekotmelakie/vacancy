@@ -26,9 +26,6 @@
                 <a class="navLinkContainerRightEachLink" href="{{url('/view-jobs')}}">View Job</a>
             </div>
             <div class="navLinkContainerRightLinks">
-                <a class="navLinkContainerRightEachLink" href="{{url('/Search-jobs')}}">Search Jobs</a>
-            </div>
-            <div class="navLinkContainerRightLinks">
                 <a class="navLinkContainerRightEachLink" href="{{url('/post-job')}}">Post Job</a>
             </div>
             <div class="navLinkContainerRightLinks">
@@ -37,7 +34,7 @@
                 </a>
             </div>
             <div class="">
-                <a class="" href="{{url('/donation')}}">
+                <a class="" href="{{url('/login')}}">
                     <button class="LoginSignup">Login/Signup</button>
                 </a>
             </div>
@@ -59,6 +56,7 @@
     }
     </script>
 
+
     <script>
     function myFunction() {
         var x = document.getElementById("togler");
@@ -69,6 +67,7 @@
         }
     }
     </script>
+
 
     <script>
     // When the user scrolls the page, execute myFunctionNew 

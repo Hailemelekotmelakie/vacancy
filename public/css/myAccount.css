@@ -1,0 +1,344 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+:root {
+    --borderColor: rgb(0, 0, 0);
+}
+
+.myAccountContainer {
+    background-color: #dbdbff;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    border-bottom: 1px solid var(--borderColor);
+    box-sizing: content-box;
+}
+
+.myAccountsUp {
+    padding: 10px;
+}
+
+.myAccountImageAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.myAccountText {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+}
+
+.myAccountImage {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-user-shield {
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.myAccountProfilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #202090;
+}
+
+.Dashboard {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.myAccountGreetingText {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.myAccountGreetingTextParagraph {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 3px 0px;
+}
+
+.myAccountsDown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.myAccountDownLists {
+    background-color: rgb(140, 141, 216);
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 10px -1px 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.myAccountDownLists:hover {
+    background-color: white;
+    border: 1px solid var(--borderColor);
+    border-bottom: 1px solid transparent;
+}
+
+.myAccountDownListsActive {
+    background-color: white;
+    border: 1px solid var(--borderColor);
+    border-bottom: 1px solid transparent;
+}
+
+.myAccountDetailContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 20px;
+}
+
+.fullNameEmail {
+    font-size: 11px;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.viewAuthPostProgressContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.lotieFilesContainer {
+    display: flex;
+    flex: 1;
+}
+
+.lotieFiles {
+    position: sticky;
+    top: 0;
+}
+
+.jobsCardContainer {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: rgb(211, 214, 255);
+    padding: 1.5rem;
+    margin: 1px 1px 10px 1px;
+    box-shadow: inset 0px 0rem 1rem rgb(95, 86, 212);
+    /* box-shadow: 0 -0.5rem 1rem rgb(179, 179, 179); */
+    border-radius: 4px;
+}
+
+.carContainerOuter {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobCardButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.viewJobsMainContainerRight {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #dedef5;
+    padding: 10px;
+    border-radius: 5PX;
+    height: min-content;
+}
+
+.viewJobsMainContainerRightLists {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.overviewContentIcons {
+    font-size: 10px;
+    flex: 1;
+    background-color: #bbbcf6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5PX;
+    height: min-content;
+}
+
+.overviewContentTexts {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.overviewContentTextsUp {
+    font-size: 11px;
+    font-weight: 600;
+    margin: 3px;
+}
+
+.overviewContentTextsDown {
+    font-size: 10px;
+    margin: 3px;
+}
+
+.editJob {
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(32, 88, 229);
+    transition: 0.5;
+}
+
+.editJob:hover {
+    color: #1400f6;
+}
+
+.deleteJob {
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(180, 25, 25);
+    transition: 0.5;
+}
+
+.deleteJob:hover {
+    color: rgb(232, 29, 29);
+}
+
+.viewJobsLeftJobText {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.viewJobsLeftJobName {
+    text-decoration: .1px double underline;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.viewJobsLeftTextAndLogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.viewJobsLeftJobIdView {
+    color: #0c053a;
+    font-size: 10px;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.jobDescriptionHeader {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 3px 10px 3px;
+}
+
+.viewJobsLeftCategory {
+    font-size: 14px;
+    padding: 3px 3px 3px 3px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (max-width:750px) {
+    .myAccountContainer {
+        padding: 10px;
+    }
+
+    .myAccountImageAndText {
+        flex-direction: column;
+    }
+
+    .makeIconsOnly {
+        display: none
+    }
+
+    .myAccountDownLists {
+        font-size: 12px;
+        padding: 15px;
+        margin: 6px 6px 0 6px;
+        border-top-right-radius: 3px;
+    }
+
+    .Dashboard {
+        font-size: 24px;
+    }
+
+    .myAccountGreetingText {
+        font-size: 18px;
+    }
+
+    .myAccountGreetingTextParagraph {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .myAccountDownLists {
+        font-size: 12px;
+        padding: 15px;
+        margin: 6px 6px -1px 6px;
+        border-top-right-radius: 3px;
+    }
+
+    .fullNameEmail {
+        font-size: 9px;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+
+    .myAccountDetailContainer {
+        padding: 2px;
+    }
+
+    .viewAuthPostProgressContainer,
+    .viewJobsMainContainerRight {
+        flex-direction: column;
+    }
+}

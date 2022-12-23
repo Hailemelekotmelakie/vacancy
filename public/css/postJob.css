@@ -1,0 +1,104 @@
+.postJob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postJobHeader {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    width: 20%;
+    border-bottom: 2px solid rebeccapurple;
+    text-align: center;
+}
+
+.error {
+    color: rgb(230, 94, 94);
+    margin-top: 20px;
+}
+
+.requiredField {
+    color: rgb(255, 0, 0);
+}
+
+.normal {
+    font-size: 18px;
+    color: rgb(3, 55, 3);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.optionalField {
+    color: rgb(18, 29, 145);
+    margin-top: 20px;
+}
+
+.postJob form input,
+.postJob form select,
+.postJob form textarea {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px 0;
+    width: 400px;
+    outline: none;
+    border: 0.5px solid rebeccapurple;
+    border-radius: 3px;
+}
+
+.postJob form textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+.postJob form select option {
+    font-size: 17;
+    font-weight: 500;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(232, 230, 237);
+    padding: 10px;
+}
+
+.postJob form label img {
+    border-radius: 5px;
+}
+
+.labelInputFile {
+    cursor: pointer;
+}
+
+.inputFile {
+    display: none;
+}
+
+.submitJobButtonContainer {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitJobButton {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(143, 143, 255);
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.submitJobButton:hover {
+    background-color: rgb(177, 177, 255);
+}

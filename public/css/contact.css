@@ -1,0 +1,195 @@
+.UpperContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgb(195, 193, 209);
+    width: 100%;
+    max-width: 700px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(200, 196, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.backgroundUpper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(211, 225, 215);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.backgroundUpperLeft,
+.backgroundUpperRight {
+    display: flex;
+    flex-direction: row;
+}
+
+.white {
+    background-color: #01693e;
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.yellow {
+    background-color: #f1d60f;
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #dc3c29;
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.buna {
+    background-color: #5e5fbf;
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.whiteSmall {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.backgroundLower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.backgroundLowerRight {
+    flex: 1;
+    margin: 30px 0;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.allFormInputs,
+.allFormInputs::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(201, 190, 190);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1.3px solid rgb(192, 195, 193);
+    margin: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.allFormInputs:hover {
+    border-bottom: 1.3px solid rgb(172, 206, 190)
+}
+
+.submitButton {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: rgb(189, 183, 183);
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    color: #5e5fbf;
+}
+
+.contactUsSocialmedias {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contactUsSocialmedias i {
+    color: #714cf6;
+    font-size: 25px;
+}
+
+.contactUs {
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.contactInfo {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.backgroundLowerLeft {
+    flex: 1;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:700px) {
+    .background {
+        margin: 20px;
+    }
+
+    .backgroundLower {
+        flex-direction: column;
+    }
+}
+
+.validationError {
+    font-size: 14px;
+    color: rgb(135, 30, 30);
+    padding-left: 15px;
+}
+
+.successDiv {
+    background-color: rgb(187, 226, 185);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.successForm {
+    padding: 20px;
+    color: black;
+}

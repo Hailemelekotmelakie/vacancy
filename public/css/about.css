@@ -1,0 +1,36 @@
+.about {
+    margin: 20px 20px 20px 20px;
+    line-height: 30px;
+    padding: 12px 70px;
+}
+
+.aboutVacantHeader {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #5e5fbf;
+}
+
+.aboutVacantText {
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:890px) {
+    .about {
+        margin: 10px 10px 10px 10px;
+        line-height: 25px;
+        padding: 5px 30px;
+    }
+
+    .aboutVacantHeader {
+        font-size: 23px;
+    }
+
+    .aboutVacantText {
+        font-size: 13px;
+        text-align: left;
+        margin-top: 8px;
+    }
+}

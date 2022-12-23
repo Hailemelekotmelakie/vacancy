@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\vacantlisttable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Route::get('/show', function () { //http://localhost:8000/api/show
+//     $result = vacantlisttable::get();
+//     return $result;
+// });

@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    @include('navOut')
-
+    @extends('layouts.navigationBarAfterLogin')
+    @section('content')
     <form method="POST" action="{{url('goForEdition')}}" class="anyDiv" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="id" value="{{$dataGonnaEdit->id}}">
@@ -35,7 +35,7 @@
         @enderror
         <button type="submit">Update</button>
     </form>
-
+    @endsection
 </body>
 
 </html>

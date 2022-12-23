@@ -1,0 +1,63 @@
+.searchedJobContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.searchedJobContainerLeft {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.searchedJobContainerRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.innerSearchedJobContainer {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 1px 10px 1px 10px;
+    border-radius: 5px;
+}
+
+.innerSearchedJobContentContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.innerSearchedJobContentContainerLeft {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.innerSearchedJobContentContainerRight {
+    flex: 1;
+}
+
+.innerSearchedJobContentContainerRightImage {
+    width: 100%;
+    height: auto;
+}
+
+
+.inputSearchBar {
+    width: 330px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(" Storage: :URL{{url('/storage/Boost.jpg')}}");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 10px;
+}

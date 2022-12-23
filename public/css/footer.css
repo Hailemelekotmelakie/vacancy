@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.footer {
+    margin-top: 10px;
+    padding: 35px;
+    background-color: #26272b;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footerMiddleAndRightContainer {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.footerLeft,
+.footerMiddleAndRightContainer {
+    flex: 2;
+    gap: 10px;
+}
+
+.footerMiddle,
+.footerRight {
+    flex: 1;
+}
+
+.footerLeftHeader,
+.footerMiddleHeader,
+.footerRightHeader {
+    font-size: 17px;
+    font-weight: 500;
+    color: #ddebde;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footerLeftText,
+.footerMiddleText,
+.footerRightText {
+    font-size: 15px;
+    font-weight: 300;
+    color: #737373;
+}
+
+.horizontalLine {
+    background-color: #737373;
+    height: 1px;
+}
+
+.copywriteAndSocialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px 1px 0px;
+    color: #737373;
+}
+
+.copywrite {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.socialMediaImage {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.vacancyhulisiracom {
+    color: #065fd4;
+}
+
+.copywrite {
+    flex: 3;
+}
+
+.socialmedia {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socialmedia a i {
+    color: #75877a;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.socialmedia a i:hover {
+    color: #a3b8b0;
+}
+
+@media screen and (max-width:890px) {
+
+    .footerContainer,
+    .copywriteAndSocialmedia {
+        flex-direction: column;
+    }
+
+    .copywriteAndSocialmedia {
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footerLeftHeader,
+    .footerMiddleHeader,
+    .footerRightHeader {
+        font-size: 15px;
+    }
+
+    .footerLeftText,
+    .footerMiddleText,
+    .footerRightText {
+        font-size: 12px;
+    }
+}

@@ -17,16 +17,22 @@ return new class extends Migration
             $table->id()->autoIncrement();
             $table->string('vacantName');
             $table->string('vacantType');
+            $table->string('vacantLogo')->nullable();
+            $table->string('vacantImage')->nullable();
 
-            // $table->string('category');
-            // $table->string('vacantDescription');
-            // $table->string('jobRequirement');
-            // $table->string('vacantLocation');
-            // $table->string('vacantExperience');
-            // $table->string('applicatioLink');
-            // $table->string('deadline');
-            // $table->string('vacantDate');
-            // $table->string('timeAgo');
+            $table->string('category');
+            $table->longText('vacantDescription');
+            $table->longText('jobRequirement')->nullable();
+            $table->string('vacantLocation');
+            $table->string('vacantExperience')->nullable();
+            $table->string('applicatioLink')->nullable();
+            $table->string('deadline')->nullable();
+            $table->string('vacantDate')->nullable();
+            $table->string('salary')->nullable();
+            $table->string('status');
+            $table->string('email');
+            $table->string('timeAgo');
+            $table->integer('noOfView');
 
             $table->timestamps();
         });

@@ -1,0 +1,182 @@
+body {
+    background: linear-gradient(-45deg, rgb(0, 0, 0), #b752ee, #5b56df, #23a6d5, #23d5ab, rgb(214, 177, 9));
+    background-size: 450% 10%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.DonateMeConatainer {
+    /* width: 80%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.donateRight,
+.donateLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    line-height: 2.5rem;
+}
+
+.DonateMeConatainerTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    line-height: 2rem;
+}
+
+.DonateMeConatainerText {
+    font-size: 16px;
+}
+
+.DonateMeConatainerHeader {
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.phoneNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000006d;
+    padding: 50px;
+    gap: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.copyButton {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+}
+
+.phoneNumberField {
+    background-color: #23a6d5;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    width: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Telebirr {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.NameHailemelekot {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    /* padding-top: 20px; */
+}
+
+@media screen and (max-width: 880px) {
+
+    .DonateMeConatainer {
+        flex-direction: column;
+    }
+
+    .copyButton,
+    .phoneNumberField {
+        font-size: 14px;
+    }
+
+    .NameHailemelekot {
+        font-size: 10px;
+    }
+
+    .phoneNumber {
+        border-radius: 0;
+        gap: 5px;
+    }
+
+    .Telebirr,
+    .DonateMeConatainerHeader {
+        font-size: 16px;
+        line-height: 1.6rem;
+    }
+
+    .DonateMeConatainerText {
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+
+    .phoneNumber {
+        padding-top: 15px;
+        margin: 0;
+    }
+}

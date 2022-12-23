@@ -76,7 +76,6 @@
 
 .jobSearchButton:hover {
     background-color: #5e5fbf;
-
 }
 
 .searchJobs {
@@ -137,4 +136,52 @@
     .jobSearchButton {
         font-size: 10px;
     }
+}
+
+/*  */
+.showRandomSampleJobs {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.showRandomSampleJobsLeft {
+    flex: 5;
+    background-color: rgb(245, 240, 240);
+    box-shadow: 1px 1px 4px #c9c7cf;
+}
+
+.showRandomSampleJobsLeftConatainer {
+    padding: 15px;
+    margin: 0px 0px 10px 0px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(210, 208, 208);
+    border-bottom: thin solid #5e5fbf;
+}
+
+.showRandomSampleJobsRight {
+    flex: 2;
+}
+
+.showRandomSampleJobsLeftUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: thin solid #8788ee;
+}
+
+.showRandomSampleJobsLeftUpText {
+    flex: 7;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.showRandomSampleJobsLeftUpImageContainer {
+    flex: 1;
+}
+
+.showRandomSampleJobsLeftUpImage {
+    height: 40px;
+    width: auto;
 }

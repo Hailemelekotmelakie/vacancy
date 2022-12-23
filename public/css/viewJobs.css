@@ -1,0 +1,357 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.viewJobsMainContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    gap: 10px;
+}
+
+
+.viewJobsMainContainerLeft {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f0f0fc;
+    padding: 30px;
+}
+
+.viewJobsLeftJobName {
+    text-decoration: .1px double underline;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.viewJobsLeftTextAndLogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontalLine {
+    height: 1px;
+    width: 100%;
+    background-color: #3f43ff
+}
+
+.viewJobsLeftJobText {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.viewJobsLeftJobLogo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewJobsLeftCategoryHeader,
+.viewJobsLeftJobRequirementHeader {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.viewJobsLeftCategory,
+.viewJobsLeftJobRequirement {
+    font-size: 13px;
+    line-height: 1.7rem;
+}
+
+.textShortener {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.viewJobsLeftJobIdView {
+    color: #0c053a;
+    font-size: 13px;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.viewJobsLeftImagesText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+.viewJobsLeftVacantImages {
+    width: 100%;
+    height: min-content;
+    user-select: none;
+}
+
+.viewJobsLeftVacantImagesLogo {
+    width: 40px;
+    height: 40px;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.viewJobsMainContainerRightListsTitle {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.viewJobsMainContainerRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #dedef5;
+    padding: 10px;
+    border-radius: 5PX;
+    height: min-content;
+}
+
+.viewJobsMainContainerRightLists {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.overviewContentIcons {
+    flex: 1;
+    background-color: #bbbcf6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5PX;
+}
+
+.overviewContentTexts {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.overviewContentTextsUp {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 3px;
+}
+
+.overviewContentTextsDown {
+    font-size: 13px;
+    margin: 3px;
+}
+
+.bottomJobViewContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.applicationLinkConatainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    gap: 10px;
+    background-color: #e3e3ff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.howApplyLink {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 1s;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, #5e5fbf 40%, rgb(50, 168, 246) 100%);
+}
+
+.howApplyLinkDeadline {
+    color: rgba(136, 13, 13, 0.956);
+    background-color: #f8cccc;
+}
+
+.howApplyLinkTelegram {
+    text-decoration: none;
+    font-size: 20px;
+    color: #33a8da;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 1s;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(90deg, #d2d3fb 40%, rgb(255, 255, 255) 100%);
+}
+
+.howApplyLink:hover,
+.howApplyLinkTelegram:hover {
+    scale: 1.1;
+}
+
+.error {
+    background-color: #990000;
+    padding: 10px;
+    margin: 10px;
+}
+
+.fill {
+    color: #990000;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Posted {
+    background-color: greenyellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+.recentAndSuggestedContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 10px;
+    margin: 0;
+    gap: 10px;
+}
+
+.suggestingJobsList,
+.recentJobsListContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f1f4ff;
+    padding: 7px;
+    box-shadow: inset 0px 0px 5px rgb(204, 198, 253);
+}
+
+.RecentJobsListText {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.recentJobsListContainerInner,
+.suggestingJobs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.RecentJobsList {
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width:890px) {
+    .viewJobsMainContainer {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .viewJobsMainContainerLeft {
+        padding: 5px;
+    }
+
+    .viewJobsLeftImagesText {
+        font-size: 12px;
+    }
+
+    .viewJobsLeftJobText {
+        margin: 5px;
+    }
+
+    .viewJobsLeftJobName {
+        font-size: 12px;
+    }
+
+    .viewJobsLeftJobIdView {
+        font-size: 7px;
+    }
+
+    .viewJobsLeftVacantImagesLogo {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .viewJobsLeftCategoryHeader,
+    .viewJobsLeftJobRequirementHeader {
+        font-size: 10px;
+    }
+
+    .viewJobsLeftCategory,
+    .viewJobsLeftJobRequirement {
+        font-size: 9px;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1rem;
+    }
+
+
+    .bottomJobViewContainer {
+        flex-direction: row;
+        padding: 4px;
+    }
+
+    .applicationLinkConatainer {
+        padding: 4px;
+        width: min-content;
+    }
+
+    .howApply {
+        font-size: 6px;
+        padding: 3px;
+    }
+
+    .howApplyLink,
+    .howApplyLinkTelegram {
+        font-size: 7px;
+        padding: 3px;
+    }
+
+    .viewJobsMainContainerRightListsTitle {
+        font-size: 15px;
+    }
+
+    .overviewContentIcons,
+    .overviewContentTextsUp {
+        font-size: 13px;
+    }
+
+    .overviewContentTextsDown {
+        font-size: 12px;
+    }
+}
